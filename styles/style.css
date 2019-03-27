@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Arya:700|Lato:300|Work+Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Sticky nav */
+.fixed-nav{
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+
+/* Top Section */
+.top-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/architecture-asian-bird-s-eye-view-186537.jpg);
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    color:white;
+    background-attachment: fixed;
+}
+.text-section{
+    padding-top:27vh;
+}
+.text-section .logo{
+    font-size: 150px;
+    /* border-radius: 50%;
+    border: 1px solid white;
+    width:200px; */
+}
+.text-section .name{
+        margin-bottom:40px;
+}
+.text-section .name h1{
+    letter-spacing: 13.5px;
+    font-size: 60px;
+}
+.text-section .photo{
+    opacity: 0.7;
+    
+    font-family: 'Lato', sans-serif;
+}
+.text-section .love{
+    font-size:60px;
+    letter-spacing: 15px;
+    margin-bottom:30px;
+    font-weight: bold;
+}
+.text-section a{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color:white;
+    padding:15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.text-section a:hover{
+    background-color: white;
+    color:black;
+}
+
+/* Menu */
+.menu{
+    height: 70px;
+    top:0;
+    border-bottom: 1px solid rgb(238, 233, 233);
+    padding:20px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px  grey;
+    font-weight: bold;
+    width: 100%;
+    
+}
+.menu .logo{
+    float:left;
+    margin-right: 70px;
+    font-size: 2rem;
+}
+.menu nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+  
+}
+.menu nav ul li{
+    margin-left: 40px;
+}
+.menu nav ul li a {
+    text-decoration: none;
+    color:black;
+
+}
+
+.menu .menu-icon{
+   float:right;
+     display:none;
+    /* display: inline-block; */
+    cursor: pointer;
+}
+.menu .menu-icon div{ 
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .menu1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .menu2{
+    display: none;
+}
+.change .menu3{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* About Us */
+.about-us{
+    text-align: center;
+    padding:50px 20px;
+   
+}
+.about-us #about{
+    opacity: 0.6;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.about-us h1{
+    margin-bottom: 20px;
+}
+.about-us .about-h1{
+    font-family: 'Arya', sans-serif;
+}
+.about-us p{
+    font-weight: lighter;
+    opacity: 0.6;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.red-border{
+    margin: auto;
+    background-color: red;
+    height: 2px;
+    width: 10%;
+    
+    margin-bottom: 30px;
+}
+
+/* Our Services */
+.our-services{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/adrenaline-adult-buildings-373934.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 20px;
+    color:white;
+    text-align: center;
+    padding-top:70px;
+    background-attachment: fixed;
+}
+.our-services h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.our-services .what-we{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+ .border{
+    margin: auto;
+    background-color: white;
+    height: 3px;
+    width: 10%;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.our-services #lorem-service{
+    margin-bottom: 10px;
+}
+
+/* Services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 40px;
+    margin:70px 30px;
+}
+.services .text h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.services .text p{
+    opacity: 0.6;
+}
+.service {
+    display: flex;
+}
+.service .icon{
+    margin-right: 30px;
+    font-size: 50px;
+    opacity: 0.4;
+}
+
+/* Our Work */
+.our-work{
+    background-color: rgb(252, 248, 248);
+    text-align: center;
+    /* height: 500px; */
+    padding: 80px 0;
+}
+.our-work h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.our-work #our-work{
+    opacity: 0.4;
+    text-transform: uppercase;
+}
+.our-work .list{
+    display: flex;
+    justify-content:center;
+}
+.our-work .list p{
+    margin-right: 30px;
+}
+/* Our Work: Gallery */
+.our-work .gallery{
+    margin-top:50px;
+}
+.our-work .gallery img{
+    height: 300px;
+    margin:10px;
+    transition: all 0.5s ease;
+    width:27%;
+}
+.our-work .gallery img:hover{
+    transform: scale(0.9);
+}
+
+/* Newsletter */
+.newsletter{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(62, 62, 62);
+    padding:40px 20px;
+    color:white;
+}
+.newsletter .text{
+    opacity: 0.6;
+    text-align: center;
+}
+.newsletter .text h2{
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input{
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color:rgb(121, 121, 121);
+    padding-left:15px;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    margin-top:10px;
+
+}
+.newsletter input::-webkit-input-placeholder{
+    color:white;
+    opacity:0.7;
+}
+.newsletter input[type = submit]{
+    cursor: pointer;
+    margin-top:15px;
+}
+
+/* Key Features */
+.key-features{
+    padding:70px 10%;
+}
+.key-features h1, .key-features .feature-text{
+    text-align: center;
+}
+.key-features h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+.key-features .feature-text{
+    font-size: 50px;
+}
+.features{
+    margin-top:60px;
+   
+}
+.feature{
+    display:flex;
+    margin-bottom: 70px;
+}
+.feature h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.feature .icon{
+    color:red;
+    font-size: 50px;
+    margin-right:40px;
+    opacity: 0.8;
+}
+/* our clinets */
+.our-client{
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/close-up-cup-drink-1549704.jpg);
+    text-align: center;
+    padding: 70px 10%;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    background-attachment: fixed;
+}
+.our-client h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.our-client .text{
+    font-size: 40px;
+}
+.our-client img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.our-client .recommend{
+    font-size: 20px;
+    font-weight: bold;
+}
+.our-client a{
+    color: white;
+    text-decoration: none;
+    
+}
+.our-client a .name{
+    color: red;
+}
+
+/* The Crews */
+.crews{
+    padding: 70px 2%;
+}
+.crews h2,.crews .text{
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.crews h2{
+    font-size: 40px;
+}
+.crews .text{
+    font-size: 40px;
+    text-transform: none;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.crew{
+    display:grid;
+    grid-template-columns: 1fr 2fr 40px;
+    grid-gap: 10px;
+}
+.crew .content p{
+    text-align: left;
+    line-height: 30px;
+}
+.crew h3{
+    text-align: left;
+   
+}
+.crew .name{
+    font-size:50px;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+.crew .role{
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.crew img{
+    height: 350px;
+}
+.crew .icon{
+    font-size: 30px;
+   
+    
+}
+.crew .icon a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.6;
+
+}
+.crew .icon a i{
+    margin-bottom:30px;
+}
+
+/* Footer */
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/architecture-buildings-business-290595.jpg);
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom: 70px;
+    background-attachment: fixed;
+}
+footer h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+footer .in-touch{
+    font-size:50px;
+    margin-bottom:20px;
+}
+footer .contacts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contacts .contact .icon{
+    font-size: 60px;
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+.contacts .contact a{
+    text-decoration: none;
+    color: red;
+}
+.contacts .contact p{
+    margin-bottom: 10px;
+}
+.footer-icon{
+    margin-top: 20px;
+}
+.footer-icon a{
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+    margin-left:30px;
+
+}
+.footer-text{
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.footer-text p{
+    margin-top:10px;
+}
