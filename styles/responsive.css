@@ -216,6 +216,9 @@
     .services .text p{
         font-size: 13px;
     }
+    .service .icon{
+        font-size: 30px;
+    }
     /* our-work */
     .our-work{
         padding: 50px 0;
@@ -255,6 +258,9 @@
     }
     .feature p{
         font-size: 13px;
+    }
+    .feature .icon{
+        font-size: 30px;
     }
 
     /* our client */
