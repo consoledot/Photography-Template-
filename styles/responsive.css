@@ -150,6 +150,12 @@
     .crew{
         grid-template-columns: 1fr 3fr 
     }
+    .crew .icon{
+        margin-right:30px;
+    }
+    .crew .icon a{
+        margin-right:40px;
+    }
 }
 @media screen and (max-width: 750px){
 
