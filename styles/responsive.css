@@ -10,14 +10,30 @@
         font-size: 50px;
     }
     /* Menu */
+
     .menu nav{
         display: none;
+        margin-top:0;
+        justify-content: center;
+        align-content: center;
+        background-color:white;
+        /* top:5; */
+        width: 100%;
+        border-top: 2px solid rgb(238, 233, 233);
+        text-align: center;
+        margin-top:10px;
     }
     .menu nav ul{
         flex-direction: column;
         float:right;
+        justify-content: center;
+        align-content: center;
     }
-    .menu #menu-icon{
+    .menu nav ul li{
+        margin-top:40px;
+        margin-left:0;
+    }
+    .menu .menu-icon{
         display: inline-block;
     }
     
